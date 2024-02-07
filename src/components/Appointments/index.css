@@ -1,0 +1,133 @@
+/* Write your CSS here */
+* {
+  box-sizing: border-box;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+}
+.card-container {
+  background-color: white;
+  width: 80vw;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 20px;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+.heading {
+  margin-top: 0;
+  color: #171f46;
+  font-weight: bold;
+  font-size: 25px;
+}
+.input-content {
+  display: flex;
+  flex-direction: column;
+}
+.input-bar {
+  padding: 8px;
+  border-width: 2px;
+  border-radius: 6px;
+  border-top-color: #b5b7c4;
+  border-left-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+}
+.label-text {
+  color: #b5b7c4;
+  font-weight: 400;
+  font-size: 16px;
+}
+.add-btn {
+  background-color: #8b5cf6;
+  color: white;
+  border-width: 0;
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+.image {
+  width: 70%;
+  height: 150px;
+}
+.hr-line {
+  height: 3px;
+  background-color: #b5b7c4;
+  width: 100%;
+}
+.appointment-item-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.appointment-item-heading {
+  color: #171f46;
+  font-weight: bold;
+  font-size: 18px;
+}
+.filter-empty {
+  background-color: transparent;
+  border: 2px solid #8b5cf6;
+  border-radius: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 12px;
+  color: #8b5cf6;
+  font-weight: bold;
+  width: 70px;
+  margin-top: 8px;
+  cursor: pointer;
+  outline: none;
+}
+.filter-filled {
+  background-color: #8b5cf6;
+  border: 2px solid #8b5cf6;
+  border-radius: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  width: 70px;
+  margin-top: 8px;
+  cursor: pointer;
+  outline: none;
+}
+.appointments-list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+@media screen and (min-width: 768px) {
+  .input-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image {
+    width: auto;
+    margin-right: 30px;
+  }
+  .input-bar {
+    width: 100%;
+  }
+  .card-container {
+    width: 60vw;
+  }
+}
